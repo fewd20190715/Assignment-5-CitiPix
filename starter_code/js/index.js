@@ -27,20 +27,20 @@ function onReady() {
     function cityToCheck(event) {
         event.preventDefault();
         $('#submit-btn').html('quote');
-        let cityToTest = $("#city-type").val();
-        if (cityToTest == 'New York' || cityToTest == 'New York City' || cityToTest == 'NYC') {
+        let cityToTest = $("#city-type").val().toLowerCase();
+        if (cityToTest == 'new york' || cityToTest == 'new york city' || cityToTest == 'nyc') {
             $('#city-image').css({'background': 'url(images/nyc.jpg) no-repeat', 'background-size': 'cover'});
         } 
-        else if (cityToTest == 'San Francisco' || cityToTest == 'SF' || cityToTest == 'Bay Area') {
+        else if (cityToTest == 'san francisco' || cityToTest == 'sf' || cityToTest == 'bay area') {
             $('#city-image').css({'background': 'url(images/sf.jpg) no-repeat', 'background-size': 'cover'});
         }
-        else if (cityToTest == 'Los Angeles' || cityToTest == 'LA' || cityToTest == 'LAX') {
+        else if (cityToTest == 'los angeles' || cityToTest == 'la' || cityToTest == 'lax') {
             $('#city-image').css({'background': 'url(images/la.jpg) no-repeat', 'background-size': 'cover'});
         }
-        else if (cityToTest == 'Austin' || cityToTest == 'ATX') {
+        else if (cityToTest == 'austin' || cityToTest == 'atx') {
             $('#city-image').css({'background': 'url(images/austin.jpg) no-repeat', 'background-size': 'cover'});
         }
-        else if (cityToTest == 'Sydney' || cityToTest == 'SYD') {
+        else if (cityToTest == 'sydney' || cityToTest == 'syd') {
             $('#city-image').css({'background': 'url(images/sydney.jpg) no-repeat', 'background-size': 'cover'});
         }
     }      
