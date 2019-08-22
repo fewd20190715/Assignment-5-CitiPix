@@ -50,6 +50,9 @@ body {
   font-size: 12px;
   line-height: 1.4;
   font-family: Helvetica, Arial, sans-serif;
+}
+#city-image {
+  height: 1000px;
   background: url(../images/citipix_skyline.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
