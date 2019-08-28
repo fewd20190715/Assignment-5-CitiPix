@@ -24,40 +24,30 @@ $( document ).ready(function() {
     event.preventDefault()
     console.log('submit button clicked');
 //gets the value from #city-type id from HTML form and saves the variable as var city
-    var city = $('#city-type').val();
+    var city = $('#city-type').val().toLowerCase();
 //multiple cases for city value begins
 
 // NEW YORK BEGINS
     switch (city) {
-      case ('New York'):
-      case ('NY'):
-      case ('NYC'):
       case ('new york'):
       case ('ny'):
       case ('nyc'):
-      case ('money makin manhattan'):
         console.log("NY")
         $("#background").css('background-image','url("images/nyc.jpg")');
         break;
 // NEW YORK ENDS
 
 //SAN FRAN BEGINS
-      case ('San Francisco'):
-      case ('SF'):
+      case ('san francisco'):
       case ('sf'):
       case ('bay area'):
-      case ('Bay area'):
-      case ('BAY AREA'):
         console.log("SF")
         $("#background").css('background-image','url("images/sf.jpg")');
         break;
 // SAN FRAN ENDS
 
 // LA BEGINS
-      case ('Los Angeles'):
-      case ('LA'):
       case ('los angeles'):
-      case ('LAX'):
       case ('la'):
       case ('lax'):
         console.log("LA")
@@ -66,9 +56,6 @@ $( document ).ready(function() {
 // LA ENDS
 
 // AUSTIN BEGINS
-      case ('Austin'):
-      case ('AUSTIN'):
-      case ('ATX'):
       case ('atx'):
       case ('austin'):
         console.log("ATX")
@@ -77,9 +64,6 @@ $( document ).ready(function() {
 // AUSTIN ENDS
 
 //SYDNEY BEGINS
-      case ('Sydney'):
-      case ('SYDNEY'):
-      case ('SYD'):
       case ('syd'):
       case ('sydney'):
         console.log("SYD")
@@ -91,5 +75,6 @@ $( document ).ready(function() {
         console.log("invalid city")
         $("#background").css('background-image','url("images/citipix_skyline.jpg")');
     }
+  $('#city-type').val('')
   });
 });
