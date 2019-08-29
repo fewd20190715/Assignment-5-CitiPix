@@ -50,13 +50,17 @@ body {
   font-size: 12px;
   line-height: 1.4;
   font-family: Helvetica, Arial, sans-serif;
+
+}
+
+#background {
   background: url(../images/citipix_skyline.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  height: 800px;
 }
-
 
 /******************************************
 /* LAYOUT
@@ -142,7 +146,3 @@ header {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-
-
-
-
